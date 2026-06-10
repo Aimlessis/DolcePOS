@@ -1,0 +1,46 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="420" d:DesignHeight="280"
+        x:Class="DolcePOS.MainWindow"
+        CanResize="False"
+        Title="DolcePOS"
+        Width="400"
+        Height="250">
+
+        <Viewbox Stretch="Uniform">
+                <StackPanel>
+                        <Image Source="avares://DolcePOS/src/img/weirdlogo.png" Width="30" Height="30"/>
+                        <TextBlock x:Name="TbkUser" Text="Usuario" Margin="5"
+                                FontWeight="Bold"/>
+                        <TextBox x:Name = "TbxUser" PlaceholderText="Nombre de Usuario"
+                                VerticalAlignment="Bottom"
+                                Margin="5"   
+                                Width="300"             
+                        />
+
+                        <TextBlock x:Name="TbkPass" Text="Contraseña"
+                                Margin="5"
+                                FontWeight="Bold"/>
+                        <TextBox x:Name = "Tbpass" PlaceholderText="Contraseña" 
+                                VerticalAlignment="Bottom"
+                                Margin="5"  />
+
+                        <Button HorizontalAlignment="Center" 
+                                VerticalAlignment= "Bottom" 
+                                Width="100"
+                                Height="55"
+                                HorizontalContentAlignment="Center"
+                                VerticalContentAlignment="Center"
+                                FontSize="20"
+                                FontWeight="Bold"
+                                Click="BtnLogin_OnClick" >
+                                LogIn
+                        </Button>
+
+                        
+                </StackPanel>
+        </Viewbox>        
+</Window>
+

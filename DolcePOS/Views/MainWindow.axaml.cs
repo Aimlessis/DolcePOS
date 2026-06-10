@@ -13,8 +13,9 @@ public partial class MainWindow : Window
 
     private void BtnLogin_OnClick(object? sender, RoutedEventArgs e)
     {
-        
-        
+        MenuWindow menu = new MenuWindow();
+        menu.Show();
+        this.Close();
 
     }
 }
