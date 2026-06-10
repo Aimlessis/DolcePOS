@@ -9,3 +9,5 @@ clean:
 	rm -rf bin/ obj/
 
 rebuild: clean build
+
+rerun: rebuild run

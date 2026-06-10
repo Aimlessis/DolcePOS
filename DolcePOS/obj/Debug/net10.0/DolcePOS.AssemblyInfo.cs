@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DolcePOS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71bae98a8e96ed224d0f8be187c24fdc9ce9a470")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15c4c40b1a6edbba2d7b4dd247cc44b3545af55c")]
 [assembly: System.Reflection.AssemblyProductAttribute("DolcePOS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DolcePOS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
