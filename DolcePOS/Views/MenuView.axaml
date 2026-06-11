@@ -6,7 +6,7 @@
         x:Class="DolcePOS.MenuWindow"
         Title="DolcePOS"
         Width="1280"
-        Height="720"
+        Height="920"
         Background="White">
 
         <Viewbox Stretch="Uniform">
@@ -18,12 +18,25 @@
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Column="0"
                           Background="#313856"
-                        
+                          
                         >
-                                
+                               <Button  Background="#3D4F68"  
+                                        Width="230"
+                                        Height="80"
+                                        FontSize="20"
+                                        VerticalAlignment="Top"
+                                        Margin="10"
+                                        HorizontalAlignment="Center"
+                                        VerticalContentAlignment="Center"
+                                        HorizontalContentAlignment="Center"
+                                        FontWeight="DemiBold"
+                                        Foreground="#B0FFFFFF"
+                                >
+                                        Punto de Venta
+                                </Button> 
                                 <Button  Background="#3D4F68"  
                                         Width="230"
-                                        Height="100"
+                                        Height="80"
                                         FontSize="20"
                                         VerticalAlignment="Top"
                                         Margin="10"
@@ -37,7 +50,7 @@
                                 </Button>
                                 <Button  Background="#3D4F68"  
                                         Width="230"
-                                        Height="100"
+                                        Height="80"
                                         FontSize="20"
                                         VerticalAlignment="Top"
                                         Margin="10"
@@ -52,7 +65,7 @@
 
                                 <Button  Background="#3D4F68"  
                                         Width="230"
-                                        Height="100"
+                                        Height="80"
                                         FontSize="20"
                                         VerticalAlignment="Top"
                                         Margin="10"
@@ -66,7 +79,7 @@
                                 </Button>
                                                                 <Button  Background="#3D4F68"  
                                         Width="230"
-                                        Height="100"
+                                        Height="80"
                                         FontSize="20"
                                         VerticalAlignment="Top"
                                         Margin="10"
@@ -80,7 +93,7 @@
                                 </Button>
                                 <Button  Background="#3D4F68"  
                                         Width="230"
-                                        Height="100"
+                                        Height="80"
                                         FontSize="20"
                                         VerticalAlignment="Top"
                                         Margin="10"
@@ -94,7 +107,7 @@
                                 </Button>
                                                                 <Button  Background="#3D4F68"  
                                         Width="230"
-                                        Height="100"
+                                        Height="80"
                                         FontSize="20"
                                         VerticalAlignment="Top"
                                         Margin="10"
