@@ -77,7 +77,7 @@
                                 >
                                         Ingredientes
                                 </Button>
-                                                                <Button  Background="#3D4F68"  
+                                <Button  Background="#3D4F68"  
                                         Width="230"
                                         Height="80"
                                         FontSize="20"
