@@ -19,7 +19,7 @@ public partial class MainWindow : Window
         InitializeComponent();
         var config = new ConfigurationBuilder()
             .SetBasePath(Directory.GetCurrentDirectory())
-            .AddJsonFile("appsettings.Development.json", optional: false, reloadOnChange: true)
+            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
             .Build();
 
         
@@ -32,6 +32,7 @@ public partial class MainWindow : Window
         string username = TbxUser.Text;
         string password = TbxPass.Text;
         
+        try{
         using var connection = new NpgsqlConnection(_connectionstring);
         connection.Open();
         using var command = new NpgsqlCommand("Select password from usuario where nombre = @username", connection);
@@ -56,6 +57,11 @@ public partial class MainWindow : Window
         else
         {
             Console.WriteLine("Contraseña incorrecta");
+        }
+        }catch(Exception ex){
+
+            Debug.WriteLine("" + ex);
+
         }
         
        
