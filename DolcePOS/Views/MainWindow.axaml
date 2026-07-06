@@ -12,25 +12,26 @@
 
         <Viewbox Stretch="Uniform">
                 <StackPanel>
-                        <Image Source="avares://DolcePOS/src/img/weirdlogo.png" Width="50" Height="50"/>
-                        <TextBlock x:Name="TbkUser" Text="Usuario" Margin="5"
+                        <Image Source= "avares://DolcePOS/src/img/weirdlogo.png" Width= "50" Height= "50"/>
+                        <TextBlock x:Name= "TbkUser" Text= "Usuario" Margin= "5"
                                 FontWeight="Bold"
                                 Foreground="Black"
                                 FontSize="20"/>
-                        <TextBox x:Name = "TbxUser" PlaceholderText="Ingrese el nombre del usuario"
+                        <TextBox x:Name = "TbxUser" PlaceholderText= "Ingrese el nombre del usuario"
                                 VerticalAlignment="Bottom"
                                 Margin="5"   
                                 Width="300"   
                                 Height="40"         
                         />
 
-                        <TextBlock x:Name="TbkPass" Text="Contraseña"
+                        <TextBlock x:Name= "TbkPass" Text= "Contraseña"
                                 Margin="5"
                                 FontWeight="Bold"
                                 Foreground="Black"
                                 FontSize="20"/>
-                        <TextBox x:Name = "Tbpass" PlaceholderText="Ingrese la contraseña" 
+                        <TextBox x:Name = "TbxPass" PlaceholderText= "Ingrese la contraseña" 
                                 VerticalAlignment="Bottom"
+                                PasswordChar="*"
                                 Margin="5" 
                                 Height="40"/>
 
