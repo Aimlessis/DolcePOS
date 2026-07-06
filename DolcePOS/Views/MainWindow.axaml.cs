@@ -3,6 +3,8 @@ using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Metadata;
 using Npgsql;
+using System.IO;
+using Microsoft.Extensions.Configuration;
 using Avalonia.Controls.Primitives;
 using System;
 
@@ -15,6 +17,14 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+        var config = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appsettings.Development.json", optional: false, reloadOnChange: true)
+            .Build();
+
+        
+        _connectionstring = config.GetConnectionString("DefaultConnection") 
+                            ?? throw new InvalidOperationException("No se encontró la cadena de conexión 'DefaultConnection' en appsettings.json");
     }
 
     private void BtnLogin_OnClick(object? sender, RoutedEventArgs e)
@@ -24,7 +34,7 @@ public partial class MainWindow : Window
         
         using var connection = new NpgsqlConnection(_connectionstring);
         connection.Open();
-        using var command = new NpgsqlCommand("Select password from usuario where username = @username", connection);
+        using var command = new NpgsqlCommand("Select password from usuario where nombre = @username", connection);
 
         command.Parameters.AddWithValue("@username", username);
 

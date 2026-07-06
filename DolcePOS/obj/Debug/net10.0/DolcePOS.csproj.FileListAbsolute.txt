@@ -27,6 +27,7 @@
 /home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/Avalonia.Win32.dll
 /home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/Avalonia.X11.dll
 /home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/AvaloniaUI.DiagnosticsSupport.Avalonia.dll
+/home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/BCrypt-Net-Next.dll
 /home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/HarfBuzzSharp.dll
 /home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/MicroCom.Runtime.dll
 /home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.dll
@@ -34,9 +35,15 @@
 /home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Relational.dll
 /home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/Microsoft.Extensions.Caching.Abstractions.dll
 /home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/Microsoft.Extensions.Caching.Memory.dll
+/home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/Microsoft.Extensions.Configuration.dll
 /home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/Microsoft.Extensions.Configuration.FileExtensions.dll
+/home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/Microsoft.Extensions.Configuration.Json.dll
 /home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/Microsoft.Extensions.DependencyInjection.dll
 /home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/Microsoft.Extensions.FileProviders.Abstractions.dll
+/home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/Microsoft.Extensions.FileProviders.Physical.dll
+/home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/Microsoft.Extensions.FileSystemGlobbing.dll
 /home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/Microsoft.Extensions.Logging.dll
 /home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/Microsoft.Extensions.Logging.Abstractions.dll
 /home/ism/projects/trabajo/POS/DolcePOS/bin/Debug/net10.0/Microsoft.Extensions.Options.dll
