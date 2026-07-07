@@ -2,11 +2,11 @@
   "version": 3,
   "targets": {
     "net10.0": {
-      "Avalonia/12.0.4": {
+      "Avalonia/12.0.5": {
         "type": "package",
         "dependencies": {
           "Avalonia.BuildServices": "11.3.2",
-          "Avalonia.Remote.Protocol": "12.0.4",
+          "Avalonia.Remote.Protocol": "12.0.5",
           "MicroCom.Runtime": "0.11.4"
         },
         "compile": {
@@ -105,6 +105,22 @@
         "type": "package",
         "build": {
           "buildTransitive/Avalonia.BuildServices.targets": {}
+        }
+      },
+      "Avalonia.Controls.DataGrid/12.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "12.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Avalonia.Controls.DataGrid.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Avalonia.Controls.DataGrid.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Avalonia.Desktop/12.0.4": {
@@ -218,7 +234,7 @@
           }
         }
       },
-      "Avalonia.Remote.Protocol/12.0.4": {
+      "Avalonia.Remote.Protocol/12.0.5": {
         "type": "package",
         "compile": {
           "lib/net10.0/Avalonia.Remote.Protocol.dll": {
@@ -1038,10 +1054,10 @@
     }
   },
   "libraries": {
-    "Avalonia/12.0.4": {
-      "sha512": "0ehIUuOVaR3OmsL8YK8v9yCCnOpzRtQSDgP5Nh2fMc+Lji8WoVGD+J6nvwkGjCH5hbm1urgvkVYWAYWkby0EeQ==",
+    "Avalonia/12.0.5": {
+      "sha512": "eGDbwos1AMlOaXnGN5IQ+JGG3RViFFuyN3GP70irOSbqZt4H9A6quIP6uVFVni/bBczmt5ELGuHzN+lkLQSD1A==",
       "type": "package",
-      "path": "avalonia/12.0.4",
+      "path": "avalonia/12.0.5",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1051,7 +1067,7 @@
         "analyzers/dotnet/cs/Avalonia.Analyzers.CodeFixes.CSharp.dll",
         "analyzers/dotnet/cs/Avalonia.Analyzers.VisualBasic.dll",
         "analyzers/dotnet/cs/Avalonia.Generators.dll",
-        "avalonia.12.0.4.nupkg.sha512",
+        "avalonia.12.0.5.nupkg.sha512",
         "avalonia.nuspec",
         "build/Avalonia.Generators.props",
         "build/Avalonia.props",
@@ -1200,6 +1216,23 @@
         "tools/netstandard2.0/runtimeconfig.json"
       ]
     },
+    "Avalonia.Controls.DataGrid/12.0.1": {
+      "sha512": "iH1Nb0bnaPi6mwYudIVxtWkqXVKOSngweFDtX9RlxyBoegvwEmeKYXFnXYNmiGs4ip6cDkj3cAYUPZ3y86Alrg==",
+      "type": "package",
+      "path": "avalonia.controls.datagrid/12.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "avalonia.controls.datagrid.12.0.1.nupkg.sha512",
+        "avalonia.controls.datagrid.nuspec",
+        "lib/net10.0/Avalonia.Controls.DataGrid.dll",
+        "lib/net10.0/Avalonia.Controls.DataGrid.xml",
+        "lib/net8.0/Avalonia.Controls.DataGrid.dll",
+        "lib/net8.0/Avalonia.Controls.DataGrid.xml",
+        "readme.md"
+      ]
+    },
     "Avalonia.Desktop/12.0.4": {
       "sha512": "7gnap/vQzMQESufH+muozlsOPAcMGE6CKEXUmv9Jx7dRK/OYO+r10ETrmRJg/zYgLPG8stZElsPUMhK8X+8rEQ==",
       "type": "package",
@@ -1297,15 +1330,15 @@
         "runtimes/osx/native/libAvaloniaNative.dylib"
       ]
     },
-    "Avalonia.Remote.Protocol/12.0.4": {
-      "sha512": "Cvnzp2KTO7BScBPnn4Q91PmVwLvv19of+ZxrN3KFHYQe8in0qNaefZgOHGEiXZ841WpdO3VUFw7qvxv/1RTTGg==",
+    "Avalonia.Remote.Protocol/12.0.5": {
+      "sha512": "/S4T1uZzXvPpN0Sqs44u3Rl5/qCZHHefRK7xyORONHH1w60IfsfsE5RbwFSku7qmib1DsGZZXxtweJq24ERfbg==",
       "type": "package",
-      "path": "avalonia.remote.protocol/12.0.4",
+      "path": "avalonia.remote.protocol/12.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "avalonia.remote.protocol.12.0.4.nupkg.sha512",
+        "avalonia.remote.protocol.12.0.5.nupkg.sha512",
         "avalonia.remote.protocol.nuspec",
         "lib/net10.0/Avalonia.Remote.Protocol.dll",
         "lib/net10.0/Avalonia.Remote.Protocol.xml",
@@ -2470,7 +2503,8 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Avalonia >= 12.0.4",
+      "Avalonia >= 12.0.5",
+      "Avalonia.Controls.DataGrid >= 12.0.1",
       "Avalonia.Desktop >= 12.0.4",
       "Avalonia.Fonts.Inter >= 12.0.4",
       "Avalonia.Themes.Fluent >= 12.0.4",
@@ -2482,24 +2516,25 @@
     ]
   },
   "packageFolders": {
-    "/home/pinpon/.nuget/packages/": {}
+    "/home/ism/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/pinpon/projects/work/DolcePOS/DolcePOS/DolcePOS.csproj",
+      "projectUniqueName": "/home/ism/projects/trabajo/POS/DolcePOS/DolcePOS.csproj",
       "projectName": "DolcePOS",
-      "projectPath": "/home/pinpon/projects/work/DolcePOS/DolcePOS/DolcePOS.csproj",
-      "packagesPath": "/home/pinpon/.nuget/packages/",
-      "outputPath": "/home/pinpon/projects/work/DolcePOS/DolcePOS/obj/",
+      "projectPath": "/home/ism/projects/trabajo/POS/DolcePOS/DolcePOS.csproj",
+      "packagesPath": "/home/ism/.nuget/packages/",
+      "outputPath": "/home/ism/projects/trabajo/POS/DolcePOS/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/pinpon/.nuget/NuGet/NuGet.Config"
+        "/home/ism/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
+        "/usr/lib64/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2526,7 +2561,11 @@
         "dependencies": {
           "Avalonia": {
             "target": "Package",
-            "version": "[12.0.4, )"
+            "version": "[12.0.5, )"
+          },
+          "Avalonia.Controls.DataGrid": {
+            "target": "Package",
+            "version": "[12.0.1, )"
           },
           "Avalonia.Desktop": {
             "target": "Package",
@@ -2572,18 +2611,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[10.0.4, 10.0.4]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.104/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/10.0.108/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

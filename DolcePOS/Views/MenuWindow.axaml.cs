@@ -18,5 +18,14 @@ public partial class MenuWindow : Window
         
         if(Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop) desktop.Shutdown();
     }
+    private void BtnClientes_OnClick(object? sender, RoutedEventArgs e)
+    {
+        
+        ClientesWindow clientesWindow = new();
+        clientesWindow.Show();
+        this.Close();
+        
+    }
+
 
    }

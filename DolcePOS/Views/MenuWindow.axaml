@@ -6,7 +6,7 @@
         x:Class="DolcePOS.MenuWindow"
         Title="DolcePOS"
         Width="1280"
-        Height="920"
+        Height="720"
         Background="White">
 
         <Viewbox Stretch="Uniform">
@@ -88,6 +88,7 @@
                                         HorizontalContentAlignment="Center"
                                         FontWeight="DemiBold"
                                         Foreground="#B0FFFFFF"
+                                        Click="BtnClientes_OnClick"
                                 >
                                         Clientes
                                 </Button>
