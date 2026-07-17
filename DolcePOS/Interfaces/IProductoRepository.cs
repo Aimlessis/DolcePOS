@@ -5,9 +5,9 @@ using System.Collections.Generic;
 
 public interface IProductoRepository
 {
-        Task<IEnumerable<Producto>> GetAllAsync(CancellationToken ct);
-        Task<Producto> GetById(int id, CancellationToken ct);
-        Task<bool> CreateAsync(Producto producto, CancellationToken ct);
-        Task<bool> UpdateAsync(Producto producto, CancellationToken ct);
-        Task<bool> DeleteAsync(int id, CancellationToken ct);
+        Task<IEnumerable<Producto>> GetAllAsync(CancellationToken ct = default);
+        Task<Producto> GetById(int id, CancellationToken ct = default);
+        Task<bool> CreateAsync(Producto producto, CancellationToken ct = default);
+        Task<bool> UpdateAsync(Producto producto, CancellationToken ct = default);
+        Task<bool> DeleteAsync(int id, CancellationToken ct = default);
 }

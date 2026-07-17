@@ -23,7 +23,7 @@ public partial class MenuWindow : Window
         
         ClientesWindow clientesWindow = new();
         clientesWindow.Show();
-        this.Close();
+
         
     }
 
