@@ -1,0 +1,181 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1080" d:DesignHeight="550"
+        x:Class="DolcePOS.ClientesWindow"
+        CanResize="False"
+        Title="DolcePOS"
+        Width="1080"
+        Height="550"
+        Background="White">
+
+
+            <Viewbox Stretch="Uniform">
+                <Grid Width="{Binding $parent[Window].Bounds.Width}" Height="{Binding $parent[Window].Bounds.Height}">
+                        
+                        <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                       <DockPanel Grid.Column="0"
+                                        Background="#313856">
+
+                                <Button DockPanel.Dock="Bottom"
+                                        Background="#3D4F68"
+                                        Width="75"
+                                        Height="80"
+                                        FontSize="20"
+                                        Margin="10"
+                                        HorizontalAlignment="Center"
+                                        VerticalContentAlignment="Center"
+                                        HorizontalContentAlignment="Center"
+                                        FontWeight="DemiBold"
+                                        Foreground="#B0FFFFFF"
+                                        Click="BtnExitToMenu_OnClick"
+                                        >
+                                        
+                                        <Image Source="avares://DolcePOS/src/img/icons/exit.png"></Image>
+                                </Button>
+
+                                <Button Background="#3D4F68"
+                                        Width="75"
+                                        Height="80"
+                                        FontSize="20"
+                                        VerticalAlignment="Top"
+                                        Margin="10"
+                                        HorizontalAlignment="Center"
+                                        VerticalContentAlignment="Center"
+                                        HorizontalContentAlignment="Center"
+                                        FontWeight="DemiBold"
+                                        Foreground="#B0FFFFFF">
+                                        <Image Source="avares://DolcePOS/src/img/icons/extend.png"></Image>
+                                </Button>
+
+                        </DockPanel>
+
+
+                        <Grid Grid.Column="1"
+                                RowDefinitions="Auto,Auto,Auto"
+                                ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+
+                                
+                                <Panel Grid.Row="0" Grid.Column="0"
+                                Width="350" Height="100"
+                                
+                                Margin="30"
+                                HorizontalAlignment="Left">
+
+                                <TextBlock Margin="20"
+                                        HorizontalAlignment="Left"
+                                        Foreground="Black"
+                                        FontWeight="Bold"
+                                        FontSize="20">
+                                        Nombre del cliente
+                                </TextBlock>
+                                <TextBox x:Name="TbxName" PlaceholderText="Ingrese el nombre del cliente"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Bottom"
+                                        Margin="15"
+                                        Width="300"
+                                        Height="40"/>
+                                </Panel>
+
+                                <Panel Grid.Row="0" Grid.Column="1"
+                                Width="350" Height="100"
+                                Margin="30"
+                                HorizontalAlignment="Left">
+
+                                <TextBlock Margin="20"
+                                        HorizontalAlignment="Left"
+                                        Foreground="Black"
+                                        FontWeight="Bold"
+                                        FontSize="20">
+                                        Credito
+                                </TextBlock>
+                                <TextBox x:Name="TbxCredit" PlaceholderText="Ingrese el credito"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Bottom"
+                                        Margin="15"
+                                        Width="300"
+                                        Height="40"/>
+                                </Panel>
+
+                                
+                                <Panel Grid.Row="1" Grid.Column="0"
+                                Width="350" Height="100"
+                                Margin="30"
+                                HorizontalAlignment="Left">
+
+                                <TextBlock Margin="20"
+                                        HorizontalAlignment="Left"
+                                        Foreground="Black"
+                                        FontWeight="Bold"
+                                        FontSize="20">
+                                        Teléfono del cliente
+                                </TextBlock>
+                                <TextBox x:Name="TbxPhoneNumber" PlaceholderText="Ingrese el telefono del cliente"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Bottom"
+                                        Margin="15"
+                                        Width="300"
+                                        Height="40"/>
+                                </Panel>
+
+                                
+                                <Panel Grid.Row="2" Grid.Column="0"
+                                Width="350" Height="170"
+                                Margin="30"
+                                HorizontalAlignment="Left">
+
+                                <TextBlock Margin="20"
+                                        HorizontalAlignment="Left"
+                                        Foreground="Black"
+                                        FontWeight="Bold"
+                                        FontSize="20">
+                                        Dirección del cliente
+                                </TextBlock>
+                                <TextBox x:Name="TbxDirection" PlaceholderText="Ingrese la dirección del cliente"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Bottom"
+                                        Margin="15"
+                                        Width="300"
+                                        Height="100"/>
+                                </Panel>
+
+                                <Button Grid.Row="1" Grid.Column="1"
+                                        Width="175"
+                                        Height="75"
+                                        FontWeight="Bold"
+                                        FontSize="20"
+                                        Foreground="White"
+                                        VerticalContentAlignment="Center"
+                                        HorizontalAlignment="Right" 
+                                        Background="#04C004"   
+                                                                            
+                                        >
+                                        
+                                        Guardar Cliente
+                                        
+                                </Button>
+                                <Button Grid.Row="2" Grid.Column="1"
+                                        Width="175"
+                                        Height="75"
+                                        FontWeight="Bold"
+                                        FontSize="20"
+                                        Foreground="White"
+                                        VerticalContentAlignment="Center"
+                                        HorizontalAlignment="Right"
+                                        Background="#D51414"
+                                        >
+                                        
+                                        Eliminar Cliente                                    
+                                </Button>
+                  
+
+                        </Grid>
+                </Grid>
+                
+        </Viewbox>        
+
+</Window>

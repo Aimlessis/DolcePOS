@@ -19,7 +19,7 @@ public partial class MainWindow : Window
         InitializeComponent();
         var config = new ConfigurationBuilder()
             .SetBasePath(Directory.GetCurrentDirectory())
-            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+            .AddJsonFile("appsettings.Development.json", optional: false, reloadOnChange: true)
             .Build();
 
         
