@@ -56,7 +56,7 @@
 
 
                         <Grid Grid.Column="1"
-                                RowDefinitions="Auto,Auto,Auto"
+                                RowDefinitions="Auto,Auto,Auto,*,Auto"
                                 ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
 
                                 
@@ -152,6 +152,7 @@
                                         VerticalContentAlignment="Center"
                                         HorizontalAlignment="Right" 
                                         Background="#04C004"   
+                                        Click="BtnGuardarCliente_OnClick"
                                                                             
                                         >
                                         
@@ -167,11 +168,13 @@
                                         VerticalContentAlignment="Center"
                                         HorizontalAlignment="Right"
                                         Background="#D51414"
+                                        Click="BtnEliminarCliente_OnClick"
                                         >
                                         
                                         Eliminar Cliente                                    
                                 </Button>
-                  
+
+
 
                         </Grid>
                 </Grid>

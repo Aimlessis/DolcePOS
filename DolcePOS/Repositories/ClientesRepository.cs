@@ -21,7 +21,7 @@ public class ClientesRepository : IClientesRepository
                 await using var connection = new NpgsqlConnection(_connectionstring);
                 await connection.OpenAsync(ct);
                 await using var command = new NpgsqlCommand(
-                        "select id, nombre, telefono, direccion, cantidad, credito from Clientes", connection
+                        "select id, nombre, telefono, direccion, credito from Cliente", connection
                 );
                 var result = new List<Clientes>();
                 await using var reader = await command.ExecuteReaderAsync(ct);
@@ -36,7 +36,7 @@ public class ClientesRepository : IClientesRepository
               await using var connection = new NpgsqlConnection(_connectionstring);
                 await connection.OpenAsync(ct);
                 await using var command = new NpgsqlCommand(
-                        "select id, nombre, telefono, direccion, cantidad, credito from Clientes where id = @id", connection
+                        "select id, nombre, telefono, direccion, credito from Cliente where id = @id", connection
                 );
                 command.Parameters.AddWithValue("@id", id);
                 
@@ -55,13 +55,12 @@ public class ClientesRepository : IClientesRepository
                 await using var connection = new NpgsqlConnection(_connectionstring);
                 await connection.OpenAsync(ct);
                 await using var command = new NpgsqlCommand(
-                @"insert into Clientes (nombre, telefono, direccion, cantidad, credito) 
-                values (@nombre, @telefono, @direccion, @cantidad, @credito)", connection
+                @"insert into Cliente (nombre, telefono, direccion, credito) 
+                values (@nombre, @telefono, @direccion, @credito)", connection
                 );
                 command.Parameters.AddWithValue("@nombre", cliente.nombre);
                 command.Parameters.AddWithValue("@telefono", cliente.telefono);
                 command.Parameters.AddWithValue("@direccion", cliente.direccion);
-                command.Parameters.AddWithValue("@cantidad", cliente.cantidad);
                 command.Parameters.AddWithValue("@credito", cliente.credito);
                 
                 int rowsaffected = await command.ExecuteNonQueryAsync(ct);
@@ -74,11 +73,10 @@ public class ClientesRepository : IClientesRepository
             await using var connection = new NpgsqlConnection(_connectionstring);
                 await connection.OpenAsync(ct);
                 await using var command = new NpgsqlCommand(
-                        @"Update Clientes set 
+                        @"Update Cliente set 
                         nombre = @nombre, 
                         telefono = @telefono, 
                         direccion = @direccion, 
-                        cantidad = @cantidad, 
                         credito = @credito 
                         where id = @id", connection
                 );
@@ -86,7 +84,6 @@ public class ClientesRepository : IClientesRepository
                 command.Parameters.AddWithValue("@nombre", cliente.nombre);
                 command.Parameters.AddWithValue("@telefono", cliente.telefono);
                 command.Parameters.AddWithValue("@direccion", cliente.direccion);
-                command.Parameters.AddWithValue("@cantidad", cliente.cantidad);
                 command.Parameters.AddWithValue("@credito", cliente.credito);
                 
                 int rowsaffected = await command.ExecuteNonQueryAsync(ct);
@@ -98,7 +95,7 @@ public class ClientesRepository : IClientesRepository
              await using var connection = new NpgsqlConnection(_connectionstring);
                 await connection.OpenAsync(ct);
                 await using var command = new NpgsqlCommand(
-                        "Delete from Clientes where id = @id", connection
+                        "Delete from Cliente where id = @id", connection
                 );
                 command.Parameters.AddWithValue("@id", id);
                 
@@ -114,7 +111,6 @@ public class ClientesRepository : IClientesRepository
                         nombre = reader.GetString(1),
                         telefono = reader.IsDBNull(2) ? null : reader.GetString(2),
                         direccion = reader.IsDBNull(3) ? null : reader.GetString(3),
-                        cantidad = reader.GetInt32(4),
                         credito = reader.GetFloat(5)
                 };
         }
